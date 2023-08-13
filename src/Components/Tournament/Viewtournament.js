@@ -161,7 +161,7 @@ export default function Viewtournament() {
                     <StyledTableCell align="right">
                       <Button
                         variant="contained"
-                        color="primary"
+                        color="error"
                         onClick={() => {
                           axios
                             .delete(API_BASE_URL + "deletetournament", {
@@ -182,7 +182,7 @@ export default function Viewtournament() {
                     <StyledTableCell align="right">
                       <Button
                         variant="contained"
-                        color="primary"
+                        color="success"
                         onClick={() => {
                           dispatch(
                             getTournamentData({
@@ -197,7 +197,7 @@ export default function Viewtournament() {
                           navigate("/participants");
                         }}
                       >
-                        Participants
+                        Participants 
                       </Button>
                     </StyledTableCell>
                   </StyledTableRow>

@@ -14,6 +14,7 @@ import axios from "axios";
 import { API_BASE_URL } from "../../config";
 import { useDispatch, useSelector } from "react-redux";
 import { getParticipantData } from "../../Reducers/Participant";
+import EditIcon from '@mui/icons-material/Edit';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -161,7 +162,7 @@ export default function Viewparticipant() {
                     <StyledTableCell align="right">
                       <Button
                         variant="contained"
-                        color="primary"
+                        color="error"
                         onClick={() => {
                           axios
                             .delete(API_BASE_URL + "deleteparticipant", {
